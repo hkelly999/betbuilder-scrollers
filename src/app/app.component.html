@@ -1,8 +1,9 @@
 <ag-grid-angular
-  [style.width.px]="600"
-  style="height:300px"
+  [style.width.px]="scrollerWidth"
+  [style.height.px]="scrollerHeight"
   class="ag-theme-balham"
   [rowData]="rowData"
   [columnDefs]="columnDefs"
+  (gridReady)="onGridReady($event)"
 >
 </ag-grid-angular>
